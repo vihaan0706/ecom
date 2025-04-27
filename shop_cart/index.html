@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Our Products</h1>
+
+        <!-- Product Catalog -->
+        <div class="catalog" id="catalog">
+            <div class="product">
+                <h3>Smartphone</h3>
+                <p>Price: $699</p>
+                <button onclick="addToCart('Smartphone', 699)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Laptop</h3>
+                <p>Price: $999</p>
+                <button onclick="addToCart('Laptop', 999)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Headphones</h3>
+                <p>Price: $199</p>
+                <button onclick="addToCart('Headphones', 199)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Fitness Tracker</h3>
+                <p>Price: $129</p>
+                <button onclick="addToCart('Fitness Tracker', 129)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Smart Watch</h3>
+                <p>Price: $249</p>
+                <button onclick="addToCart('Smart Watch', 249)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Bluetooth Speaker</h3>
+                <p>Price: $89</p>
+                <button onclick="addToCart('Bluetooth Speaker', 89)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Camera</h3>
+                <p>Price: $499</p>
+                <button onclick="addToCart('Camera', 499)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Gaming Mouse</h3>
+                <p>Price: $49</p>
+                <button onclick="addToCart('Gaming Mouse', 49)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Monitor</h3>
+                <p>Price: $349</p>
+                <button onclick="addToCart('Monitor', 349)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Keyboard</h3>
+                <p>Price: $89</p>
+                <button onclick="addToCart('Keyboard', 89)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Tablet</h3>
+                <p>Price: $399</p>
+                <button onclick="addToCart('Tablet', 399)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>External Hard Drive</h3>
+                <p>Price: $79</p>
+                <button onclick="addToCart('External Hard Drive', 79)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Smart Light Bulb</h3>
+                <p>Price: $25</p>
+                <button onclick="addToCart('Smart Light Bulb', 25)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Drone</h3>
+                <p>Price: $599</p>
+                <button onclick="addToCart('Drone', 599)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Electric Scooter</h3>
+                <p>Price: $450</p>
+                <button onclick="addToCart('Electric Scooter', 450)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Container at the Bottom -->
+    <div class="cart-container">
+        <h2>Your Cart</h2>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-total">
+            <p>Total: $<span id="total-price">0</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>
